@@ -1,0 +1,99 @@
+.burger-wrapper {
+width: 100%;
+position: relative;
+display: grid;
+margin-top: 10%;
+}
+
+.burger {
+width: 35%;
+margin: 0 auto;
+
+}
+
+.top {
+/*border: 2px solid black;*/
+z-index: 7;
+transition-duration: 1s;
+}
+
+.burger-wrapper:hover .top {
+margin-top: -7%;
+margin-left: 15%;
+margin-bottom: 3%;
+}
+
+.tomato {
+margin-top: -5%;
+z-index: 6;
+transition: ease 0.5s;
+}
+
+.burger-wrapper:hover .tomato {
+margin-right: 15%;
+margin-bottom: 3%;
+}
+
+.cheese {
+margin-top: -4%;
+z-index: 5;
+transition: ease 0.5s;
+}
+
+.burger-wrapper:hover .cheese {
+margin-left: 15%;
+margin-bottom: 3%;
+}
+
+.meat {
+margin-top: -6%;
+z-index: 4;
+transition: ease 0.5s;
+}
+
+.burger-wrapper:hover .meat {
+margin-right: 15%;
+margin-bottom: 3%;
+}
+
+.ketchup {
+margin-top: -8%;
+z-index: 3;
+transition: ease 0.5s;
+}
+
+.burger-wrapper:hover .ketchup {
+margin-left: 15%;
+margin-bottom: 3%;
+}
+
+.bottom {
+margin-top: -5.5%;
+z-index: 2;
+transition: ease 0.5s;
+}
+
+.burger-wrapper:hover .bottom {
+margin-right: 15%;
+margin-bottom: 0%;
+}
+
+.writing {
+width: 16%;
+position: absolute;
+  visibility: hidden;
+  background-image: linear-gradient(to right, #fff, #3B3B3B, #3B3B3B);
+  color:#000;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  line-height: 100px;
+  padding-left:4%;
+}
+
+.top:hover + .writing{
+margin-top: -4%;
+margin-left: 80%;
+  visibility: visible;
+  display: block;
+}
